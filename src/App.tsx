@@ -16,7 +16,7 @@ export const App = () => {
 
   useEffect(() => {
     axios
-      .get('https://backenddoublemax.space/', { withCredentials: true })
+      .get('https://backenddoublemax.space/')
       .then((res) => {
         setPosts(res.data);
       })
