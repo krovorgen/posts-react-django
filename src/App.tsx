@@ -13,7 +13,7 @@ export const App = () => {
   const [posts, setPosts] = useState<{ title: string; channel: string }[]>([]);
   useEffect(() => {
     axios
-      .get('http://maksip83.beget.tech/', { withCredentials: true })
+      .get('http://backenddoublemax.space/', { withCredentials: true })
       .then((res) => {
         setPosts(res.data);
       })
